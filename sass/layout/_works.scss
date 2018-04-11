@@ -1,0 +1,46 @@
+.works {
+  margin: 5rem 20rem;
+  text-align: center;
+
+  &__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .works-step {
+      text-align: center;
+      &--logo {
+        position: relative;
+        margin-right: 3rem;
+
+        & i {
+          display: block;
+          font-size: 10rem;
+          color: $color-p;
+        }
+        & span {
+          display: block;
+          position: absolute;
+          top: 22%;
+          left: 42%;
+          font-size: 5rem;
+          font-weight: 300;
+        }
+      }
+
+      &--info {
+        font-size: 2rem;
+        & i {
+          font-size: calc(100% + 2rem);
+          margin-right: 1rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

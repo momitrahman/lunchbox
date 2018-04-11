@@ -54,34 +54,69 @@ body {
       display: inline-block; }
   .header__navigation {
     font-size: 2rem; }
+    .header__navigation li {
+      list-style: none;
+      display: inline-block; }
     .header__navigation a:link,
     .header__navigation a:visited {
       text-decoration: none;
       color: inherit;
       display: inline-block;
       margin-left: 1rem; }
+    .header__navigation button {
+      font-size: 2rem;
+      font-weight: 300; }
 
 .info {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  border: 2px solid #00a4d6;
+  border-radius: 3px; }
   .info__title {
     font-size: 4rem;
     font-weight: 300;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
-    border-top: 2px solid #00a4d6;
     padding: 1rem; }
   .info__subtitle {
     font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
     text-transform: lowercase;
-    border-bottom: 2px solid #00a4d6;
     padding: 1rem; }
-  .info button {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-top: 5rem; }
+
+.works {
+  margin: 5rem 20rem;
+  text-align: center; }
+  .works__title {
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .works__steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .works__steps .works-step {
+      text-align: center; }
+      .works__steps .works-step--logo {
+        position: relative;
+        margin-right: 3rem; }
+        .works__steps .works-step--logo i {
+          display: block;
+          font-size: 10rem;
+          color: #00a4d6; }
+        .works__steps .works-step--logo span {
+          display: block;
+          position: absolute;
+          top: 22%;
+          left: 42%;
+          font-size: 5rem;
+          font-weight: 300; }
+      .works__steps .works-step--info {
+        font-size: 2rem; }
+        .works__steps .works-step--info i {
+          font-size: calc(100% + 2rem);
+          margin-right: 1rem;
+          vertical-align: middle; }
