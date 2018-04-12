@@ -1,0 +1,72 @@
+.package-items {
+  @extend %flex;
+  margin-bottom: 10rem;
+}
+
+.package-item {
+  margin: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 3px $font-color-p;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: $font-color-s;
+    background-color: $bg-color-s;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    & > span {
+      font-size: 2rem;
+    }
+  }
+
+  &__info {
+    list-style: none;
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 2rem;
+
+    & i {
+      font-size: calc(100% - 0.5rem);
+      margin-right: 1rem;
+    }
+  }
+
+  &__order {
+    font-size: 2rem;
+    font-weight: 300;
+    color: $font-color-s;
+    width: 100%;
+    background-color: $bg-color-s;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.package-lover-box {
+  transform: rotate(-5deg) skew(-5deg);
+  background-image: linear-gradient(
+    to top,
+    rgba($color-p, 0.2),
+    rgba($color-s, 0.2)
+  );
+  padding: 4rem;
+  margin-top: 3rem;
+}
+.package-lover {
+  @extend %flex;
+  transform: rotate(5deg) skew(5deg);
+  // color: $font-color-s;
+  text-transform: lowercase;
+
+  &__item {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem;
+    padding: 1rem;
+
+    & > span {
+      display: block;
+      font-size: 1.6rem;
+    }
+  }
+}

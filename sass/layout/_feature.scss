@@ -11,13 +11,12 @@
 }
 
 .feature-info {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  @extend %flex;
 
   &-item {
-    margin: 1rem 0;
+    margin: 3rem 0;
     padding: 2rem;
+    transition: all 0.3s;
 
     & div {
       font-size: 2rem;
@@ -31,8 +30,13 @@
     }
 
     & i {
-      color: $color-p;
+      color: $color-s;
       font-size: 4rem;
+    }
+
+    &:hover {
+      border-radius: 5px;
+      transform: scale(0.9);
     }
   }
 }

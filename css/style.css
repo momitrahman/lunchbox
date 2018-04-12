@@ -21,12 +21,16 @@ body {
 .header__title, .info__title {
   font-family: 'Abril Fatface', cursive; }
 
+.header, .works__steps, .feature-info, .package-items, .package-lover {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
 .btn {
   display: inline-block;
   text-decoration: none;
   padding: 1rem 1.5rem;
-  border: none;
-  border-radius: 50px; }
+  border: none; }
   .btn-p {
     background-color: #00d3c6;
     color: inherit;
@@ -69,9 +73,7 @@ body {
   color: #ffffff; }
 
 .header {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
   font-size: 2.5rem; }
   .header__title > span {
     margin-left: 5px; }
@@ -115,35 +117,31 @@ body {
 
 .works {
   text-align: center;
-  margin-top: 3rem; }
-  .works__steps {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    .works__steps .works-step {
-      text-align: center; }
-      .works__steps .works-step--logo {
-        position: relative;
-        margin-right: 2rem; }
-        .works__steps .works-step--logo i {
-          display: block;
-          font-size: 8rem;
-          color: #00a4d6; }
-        .works__steps .works-step--logo span {
-          display: block;
-          position: absolute;
-          top: 22%;
-          left: 44%;
-          font-size: 4rem;
-          font-weight: 300; }
-      .works__steps .works-step--info {
-        font-size: 2rem;
-        margin-top: -2rem;
-        margin-bottom: 1rem; }
-        .works__steps .works-step--info i {
-          font-size: calc(100% + 2rem);
-          margin-right: 1rem;
-          vertical-align: middle; }
+  margin-top: 1rem; }
+  .works__steps .works-step {
+    text-align: center; }
+    .works__steps .works-step--logo {
+      position: relative;
+      margin-right: 2rem; }
+      .works__steps .works-step--logo i {
+        display: block;
+        font-size: 6rem;
+        color: #00a4d6; }
+      .works__steps .works-step--logo span {
+        display: block;
+        position: absolute;
+        top: 22%;
+        left: 45%;
+        font-size: 3rem;
+        font-weight: 300; }
+    .works__steps .works-step--info {
+      font-size: 1.8rem;
+      margin-top: -2rem;
+      margin-bottom: 1rem; }
+      .works__steps .works-step--info i {
+        font-size: calc(100% + 2rem);
+        margin-right: 1rem;
+        vertical-align: middle; }
 
 .feature-box {
   background: linear-gradient(to top, rgba(0, 164, 214, 0.2), rgba(0, 130, 200, 0.2));
@@ -155,20 +153,69 @@ body {
   text-align: center;
   transform: rotate(5deg) skew(5deg); }
 
-.feature-info {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-  .feature-info-item {
-    margin: 1rem 0;
+.feature-info-item {
+  margin: 3rem 0;
+  padding: 2rem;
+  transition: all 0.3s; }
+  .feature-info-item div {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1rem; }
+  .feature-info-item p {
+    font-size: 1.6rem; }
+  .feature-info-item i {
+    color: #0082c8;
+    font-size: 4rem; }
+  .feature-info-item:hover {
+    border-radius: 5px;
+    transform: scale(0.9); }
+
+.package-items {
+  margin-bottom: 10rem; }
+
+.package-item {
+  margin: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 3px #364954; }
+  .package-item__title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #00bdd7;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+    .package-item__title > span {
+      font-size: 2rem; }
+  .package-item__info {
+    list-style: none;
+    font-size: 1.6rem;
+    text-align: left;
     padding: 2rem; }
-    .feature-info-item div {
-      font-size: 2rem;
-      font-weight: 700;
-      text-transform: capitalize;
-      margin-bottom: 1rem; }
-    .feature-info-item p {
+    .package-item__info i {
+      font-size: calc(100% - 0.5rem);
+      margin-right: 1rem; }
+  .package-item__order {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+    width: 100%;
+    background-color: #00bdd7;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); }
+
+.package-lover-box {
+  transform: rotate(-5deg) skew(-5deg);
+  background-image: linear-gradient(to top, rgba(0, 164, 214, 0.2), rgba(0, 130, 200, 0.2));
+  padding: 4rem;
+  margin-top: 3rem; }
+
+.package-lover {
+  transform: rotate(5deg) skew(5deg);
+  text-transform: lowercase; }
+  .package-lover__item {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem;
+    padding: 1rem; }
+    .package-lover__item > span {
+      display: block;
       font-size: 1.6rem; }
-    .feature-info-item i {
-      color: #00a4d6;
-      font-size: 4rem; }
