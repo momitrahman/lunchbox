@@ -1,0 +1,29 @@
+.feature {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.feature-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &-item {
+    margin: 5rem 0;
+    padding: 2rem;
+
+    & div {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-size: 1.6rem;
+    }
+
+    & i {
+      color: $color-p;
+      font-size: 3rem;
+    }
+  }
+}
