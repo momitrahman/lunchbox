@@ -1,6 +1,13 @@
+.feature-box {
+  background: linear-gradient(to top, rgba($color-p, 0.2), rgba($color-s, 0.2));
+  transform: rotate(-5deg) skew(-5deg);
+  padding: 5rem;
+  margin: 5rem 0;
+}
+
 .feature {
   text-align: center;
-  margin: 5rem 0;
+  transform: rotate(5deg) skew(5deg);
 }
 
 .feature-info {
@@ -9,11 +16,13 @@
   align-items: center;
 
   &-item {
-    margin: 5rem 0;
+    margin: 1rem 0;
     padding: 2rem;
 
     & div {
       font-size: 2rem;
+      font-weight: 700;
+      text-transform: capitalize;
       margin-bottom: 1rem;
     }
 
@@ -23,7 +32,7 @@
 
     & i {
       color: $color-p;
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
 }
