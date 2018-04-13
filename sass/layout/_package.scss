@@ -1,6 +1,6 @@
 .package-items {
   @extend %flex;
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
 }
 
 .package-item {
@@ -42,21 +42,12 @@
   }
 }
 
-.package-lover-box {
-  transform: rotate(-5deg) skew(-5deg);
-  background-image: linear-gradient(
-    to top,
-    rgba($color-p, 0.2),
-    rgba($color-s, 0.2)
-  );
-  padding: 4rem;
-  margin-top: 3rem;
-}
 .package-lover {
   @extend %flex;
-  transform: rotate(5deg) skew(5deg);
-  // color: $font-color-s;
   text-transform: lowercase;
+  margin: 2rem 0;
+  @extend %d-font;
+  background: #fff;
 
   &__item {
     font-size: 3rem;

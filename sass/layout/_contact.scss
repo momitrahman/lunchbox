@@ -1,0 +1,60 @@
+.contact-box {
+  background: linear-gradient(to top, rgba($color-p, 0.2), rgba($color-s, 0.2));
+  transform: rotate(-5deg) skew(-5deg);
+  padding: 5rem;
+  margin: 5rem 0;
+}
+
+.contact {
+  transform: rotate(5deg) skew(5deg);
+}
+
+.contact-info {
+  @extend %flex;
+  align-items: flex-start;
+
+  &__form {
+    display: flex;
+    margin: 1rem;
+
+    & input,
+    & textarea,
+    & button {
+      border: none;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border-bottom: 2px solid $color-s;
+      width: 50vh;
+
+      &:focus {
+        outline: none;
+        border: none;
+        outline: 2px solid $color-s;
+        &:invalid {
+          outline: 2px solid orangered;
+        }
+      }
+    }
+
+    & button {
+      border: none;
+      background: $color-p;
+    }
+  }
+
+  &__address {
+    text-align: left;
+    font-size: 2rem;
+
+    & i {
+      margin-right: 5px;
+      color: $color-p;
+    }
+
+    &--title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+}
