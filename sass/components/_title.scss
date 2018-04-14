@@ -14,7 +14,7 @@
       left: 52%;
       transform: translateX(-50%);
       width: 5rem;
-      border-bottom: 2px solid $color-p;
+      border-bottom: 2px solid $color-s;
     }
     &:before {
       content: '';
@@ -24,7 +24,7 @@
       left: 50%;
       transform: translateX(-60%);
       width: 5rem;
-      border-bottom: 2px solid $color-p;
+      border-bottom: 2px solid $color-s;
     }
   }
 }

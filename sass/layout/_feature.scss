@@ -1,5 +1,5 @@
 .feature-box {
-  background: linear-gradient(to top, rgba($color-p, 0.2), rgba($color-s, 0.2));
+  background-color: rgba($bg-color-p, 0.9);
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0;
@@ -14,23 +14,24 @@
   @extend %flex;
 
   &-item {
-    margin: 3rem 0;
+    margin: 2rem 0;
     padding: 2rem;
     transition: all 0.3s;
 
     & div {
       font-size: 2rem;
-      font-weight: 700;
       text-transform: capitalize;
       margin-bottom: 1rem;
     }
 
     & p {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
+      font-weight: 300;
     }
 
     & i {
       font-size: 4rem;
+      color: $color-s;
     }
 
     &:hover {

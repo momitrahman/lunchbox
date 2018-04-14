@@ -1,14 +1,5 @@
 .contact-box {
-  // background: linear-gradient(to top, rgba($color-p, 0.2), rgba($color-s, 0.2));
-  background-image: linear-gradient(
-    to right top,
-    #00a4d6,
-    #00b7d9,
-    #00c8d1,
-    #00d8bf,
-    #58e5a8
-  );
-
+  background-color: rgba($color-p, 0.9);
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0;
@@ -21,6 +12,7 @@
 .contact-info {
   @extend %flex;
   align-items: flex-start;
+  margin: 2rem;
 
   &__form {
     display: flex;
@@ -33,7 +25,7 @@
       padding: 1rem;
       margin-bottom: 1rem;
       border-radius: 5px;
-      border-bottom: 2px solid $color-s;
+      border-bottom: 3px solid $color-s;
       width: 50vh;
 
       &:focus {
@@ -41,24 +33,27 @@
         border: none;
         outline: 2px solid $color-s;
         &:invalid {
-          outline: 2px solid orangered;
+          outline: 2px solid $color-r;
         }
       }
     }
 
     & button {
       border: none;
-      background: $color-p;
+      background: $color-s;
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: $font-color-s;
     }
   }
 
   &__address {
     text-align: left;
     font-size: 2rem;
-
+    margin-top: 2rem;
     & i {
       margin-right: 5px;
-      color: $color-p;
+      color: $color-s;
     }
 
     &--title {

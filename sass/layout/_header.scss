@@ -50,19 +50,17 @@
     & li:active {
       & a {
         color: $color-s;
-        transform: translateY(-0.5rem) scale(0.9);
+        transform: translateY(-0.5rem);
         border-bottom: 3px solid $color-s;
       }
     }
 
     .call {
       font-size: 1.6rem;
-      margin-left: 2rem;
       background-color: $color-s;
-      color: $font-color-p;
-      height: 100%;
+      margin-left: 2rem;
+      padding: 3px;
       border-radius: 3px;
-      padding: 5px;
       letter-spacing: 2px;
       transition: all 0.5s;
 

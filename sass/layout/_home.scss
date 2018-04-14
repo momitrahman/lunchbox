@@ -1,8 +1,8 @@
 .home {
   background-image: linear-gradient(
-      to top,
-      rgba($color-p, 0.3),
-      rgba($color-s, 0.3)
+      to right top,
+      rgba($color-p, 0.4),
+      rgba($color-s, 0.2)
     ),
     url('../../asset/image/hero.jpeg');
   background-position: center;
@@ -35,5 +35,6 @@
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding: 1rem;
+    // color: $font-color-p;
   }
 }
