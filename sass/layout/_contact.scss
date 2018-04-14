@@ -1,5 +1,5 @@
 .contact-box {
-  background-color: rgba($color-p, 0.9);
+  background-color: rgba($color-p, 0.6);
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0;
@@ -56,6 +56,7 @@
     font-size: 2rem;
     margin-top: 3rem;
     padding: 1rem;
+    letter-spacing: 1px;
     & i {
       margin-right: 5px;
       vertical-align: middle;

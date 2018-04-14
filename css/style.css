@@ -19,7 +19,7 @@ body {
   text-align: center;
   background: #f5f5f5; }
 
-.header__title, .info__title, .company div {
+.header__title, .company div {
   font-family: 'Abril Fatface', cursive; }
 
 .header, .works__steps, .feature-info, .package-items, .contact-info, .review-lover, .footer {
@@ -48,9 +48,12 @@ body {
 .title {
   font-family: 'Abril Fatface', cursive;
   font-size: 3rem;
+  font-weight: 300;
   text-transform: uppercase;
   position: relative;
-  margin: 1rem; }
+  margin: 1rem;
+  letter-spacing: 1px;
+  word-spacing: 3px; }
   .title span:after {
     content: '';
     display: block;
@@ -76,7 +79,7 @@ body {
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: rgba(0, 164, 214, 0.9);
+  background-color: rgba(0, 164, 214, 0.8);
   color: #f5f6fa; }
   .header__title {
     font-size: 2.5rem; }
@@ -110,7 +113,7 @@ body {
       transform: translateY(-0.5rem);
       border-bottom: 3px solid #8565b6; }
     .header__navigation .call {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       background-color: #8565b6;
       margin-left: 2rem;
       padding: 3px;
@@ -126,7 +129,7 @@ body {
         transform: scale(1.1); }
 
 .home {
-  background-image: linear-gradient(to right top, rgba(0, 164, 214, 0.4), rgba(133, 101, 182, 0.2)), url("../asset/image/hero.jpeg");
+  background-image: linear-gradient(to right top, rgba(133, 101, 182, 0.4), rgba(0, 164, 214, 0.4)), url("../asset/image/hero.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,10 +152,10 @@ body {
     padding: 1rem; }
   .info__subtitle {
     font-size: 2rem;
-    font-weight: 300;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-    padding: 1rem; }
+    padding: 1rem;
+    color: #2f3640; }
 
 .works {
   text-align: center;
@@ -184,7 +187,7 @@ body {
         color: #8565b6; }
 
 .feature-box {
-  background-color: rgba(0, 164, 214, 0.9);
+  background-color: rgba(0, 164, 214, 0.6);
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0; }
@@ -209,14 +212,10 @@ body {
       font-size: 3.5rem;
       color: #8565b6; }
     .feature-info-item:hover {
-      box-shadow: 0 1px 2px #00a4d6;
+      box-shadow: 0 2px 2px #8565b6;
       border-radius: 5px;
-      background: #8565b6;
-      color: white;
       transform: translateY(-1.5rem);
       backface-visibility: hidden; }
-      .feature-info-item:hover i {
-        color: inherit; }
 
 .package-items {
   margin: 2rem 0; }
@@ -224,13 +223,13 @@ body {
 .package-item {
   margin: 3rem 0;
   text-align: center;
-  box-shadow: 0 2px 3px #2f3640;
+  box-shadow: 0 2px 3px #00a4d6;
   transition: all 0.3s; }
   .package-item__title {
     font-size: 3.5rem;
     font-weight: 300;
     color: #f5f6fa;
-    background-color: rgba(0, 164, 214, 0.9);
+    background-color: rgba(133, 101, 182, 0.9);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .package-item__title > span {
       font-size: 2rem; }
@@ -248,14 +247,14 @@ body {
     font-weight: 300;
     color: #f5f6fa;
     width: 100%;
-    background-color: rgba(0, 164, 214, 0.9);
+    background-color: rgba(133, 101, 182, 0.9);
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); }
   .package-item:hover {
     transform: translateY(-2rem);
     backface-visibility: hidden; }
 
 .contact-box {
-  background-color: rgba(0, 164, 214, 0.9);
+  background-color: rgba(0, 164, 214, 0.6);
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0; }
@@ -302,7 +301,8 @@ body {
     text-align: left;
     font-size: 2rem;
     margin-top: 3rem;
-    padding: 1rem; }
+    padding: 1rem;
+    letter-spacing: 1px; }
     .contact-info__address i {
       margin-right: 5px;
       vertical-align: middle;
@@ -328,11 +328,10 @@ body {
     color: #8565b6; }
     .review-lover__item > span {
       display: block;
-      font-weight: 300;
       font-size: 1.6rem; }
 
 .review-comment {
-  width: 70%; }
+  width: 75%; }
 
 .review-customer {
   display: flex;
@@ -354,12 +353,11 @@ body {
       display: block;
       width: 50%;
       border-radius: 50%;
-      margin-top: -6rem;
+      margin-top: -8rem;
       filter: grayscale(50%) brightness(60%); }
     .review-customer__item p {
       display: block;
-      font-size: 2rem;
-      font-weight: 300;
+      font-size: 1.8rem;
       border-radius: 5px;
       padding: 1rem; }
       .review-customer__item p > i {
@@ -373,7 +371,7 @@ body {
         filter: grayscale(0) brightness(100%); }
 
 .footer {
-  background-color: rgba(0, 164, 214, 0.9);
+  background-color: rgba(0, 164, 214, 0.6);
   margin-top: 5rem;
   color: #2f3640; }
 
@@ -417,4 +415,4 @@ body {
 .follow a:hover,
 .follow a:active {
   color: #8565b6;
-  transform: translateY(-0.5rem) rotate(5deg) scale(1.1); }
+  transform: rotate(-5deg) scale(1.1); }

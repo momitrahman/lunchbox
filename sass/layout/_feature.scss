@@ -1,5 +1,5 @@
 .feature-box {
-  background-color: rgba($bg-color-p, 0.9);
+  background-color: rgba($bg-color-p, 0.6);
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0;
@@ -35,16 +35,10 @@
     }
 
     &:hover {
-      box-shadow: 0 1px 2px $color-p;
+      box-shadow: 0 2px 2px $color-s;
       border-radius: 5px;
-      background: $color-s;
-      color: white;
       transform: translateY(-1.5rem);
       backface-visibility: hidden;
-
-      & i {
-        color: inherit;
-      }
     }
   }
 }

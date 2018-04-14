@@ -6,14 +6,14 @@
 .package-item {
   margin: 3rem 0;
   text-align: center;
-  box-shadow: 0 2px 3px $font-color-p;
+  box-shadow: 0 2px 3px $color-p;
   transition: all 0.3s;
 
   &__title {
     font-size: 3.5rem;
     font-weight: 300;
     color: $font-color-s;
-    background-color: rgba($bg-color-p, 0.9);
+    background-color: rgba($bg-color-s, 0.9);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
     & > span {
@@ -39,7 +39,7 @@
     font-weight: 300;
     color: $font-color-s;
     width: 100%;
-    background-color: rgba($bg-color-p, 0.9);
+    background-color: rgba($bg-color-s, 0.9);
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   }
 

@@ -1,9 +1,12 @@
 .title {
   font-family: 'Abril Fatface', cursive;
   font-size: 3rem;
+  font-weight: 300;
   text-transform: uppercase;
   position: relative;
   margin: 1rem;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 
   & span {
     &:after {
