@@ -5,6 +5,7 @@
 .review-info {
   display: flex;
   justify-content: space-evenly;
+  justify-content: center;
 }
 
 .review-lover {
@@ -27,50 +28,52 @@
   }
 }
 
+.review-comment {
+  width: 70%;
+}
 .review-customer {
-  @extend %flex;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   margin-top: 5rem;
   &__item {
-    &--rel {
-      position: relative;
+    box-shadow: 0 1px 2px $color-p;
+    border-radius: 5px;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    transition: all 0.5s;
+
+    & img {
+      display: block;
+      width: 50%;
+      border-radius: 50%;
+      margin-top: -6rem;
+      filter: grayscale(50%) brightness(60%);
+    }
+
+    & p {
+      display: block;
+      font-size: 2rem;
+      font-weight: 300;
+      border-radius: 5px;
+      padding: 1rem;
+      & > i {
+        margin-right: 5px;
+        vertical-align: super;
+      }
+    }
+    &:hover {
+      background: rgba($color-s, 1);
+      color: $font-color-s;
+      transform: translateY(-1.5rem);
 
       & img {
-        display: block;
-        top: 100%;
-        width: 70%;
-        border-radius: 5%;
-        opacity: 1;
-        filter: grayscale(50%) brightness(60%);
-      }
-
-      & p {
-        display: block;
-        position: absolute;
-        top: 0;
-        width: 70%;
-        font-size: 2rem;
-        font-weight: 300;
-        color: $color-s;
-        // background: rgba($color-p, 0.9);
-        // box-shadow: 0 1px 2px $color-s;
-        border-radius: 5px;
-        padding: 1rem;
-        opacity: 0;
-
-        & > i {
-          margin-right: 5px;
-          vertical-align: super;
-        }
-      }
-
-      &:hover {
-        & > p {
-          opacity: 1;
-        }
-        & > img {
-          opacity: 0;
-          transform: translateY(-1rem);
-        }
+        filter: grayscale(0) brightness(100%);
       }
     }
   }

@@ -22,7 +22,7 @@ body {
 .header__title, .info__title, .company div {
   font-family: 'Abril Fatface', cursive; }
 
-.header, .works__steps, .feature-info, .package-items, .contact-info, .review-lover, .review-customer, .footer {
+.header, .works__steps, .feature-info, .package-items, .contact-info, .review-lover, .footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
@@ -185,6 +185,7 @@ body {
 .feature-info {
   margin-bottom: 5rem; }
   .feature-info-item {
+    margin: 2rem;
     padding: 2rem;
     transition: all 0.5s; }
     .feature-info-item div {
@@ -198,8 +199,9 @@ body {
       font-size: 4rem;
       color: #8565b6; }
     .feature-info-item:hover {
+      box-shadow: 0 1px 2px #00a4d6;
       border-radius: 5px;
-      transform: translateY(-1rem);
+      transform: translateY(-1.5rem);
       background: #8565b6;
       color: white;
       backface-visibility: hidden; }
@@ -212,7 +214,8 @@ body {
 .package-item {
   margin: 3rem 0;
   text-align: center;
-  box-shadow: 0 2px 3px #364954; }
+  box-shadow: 0 2px 3px #364954;
+  transition: all 0.5s; }
   .package-item__title {
     font-size: 3.5rem;
     font-weight: 300;
@@ -300,7 +303,8 @@ body {
 
 .review-info {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  justify-content: center; }
 
 .review-lover {
   flex-direction: column;
@@ -316,36 +320,46 @@ body {
       font-weight: 300;
       font-size: 1.6rem; }
 
+.review-comment {
+  width: 70%; }
+
 .review-customer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   margin-top: 5rem; }
-  .review-customer__item--rel {
-    position: relative; }
-    .review-customer__item--rel img {
+  .review-customer__item {
+    box-shadow: 0 1px 2px #00a4d6;
+    border-radius: 5px;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    transition: all 0.5s; }
+    .review-customer__item img {
       display: block;
-      top: 100%;
-      width: 70%;
-      border-radius: 5%;
-      opacity: 1;
+      width: 50%;
+      border-radius: 50%;
+      margin-top: -6rem;
       filter: grayscale(50%) brightness(60%); }
-    .review-customer__item--rel p {
+    .review-customer__item p {
       display: block;
-      position: absolute;
-      top: 0;
-      width: 70%;
       font-size: 2rem;
       font-weight: 300;
-      color: #8565b6;
       border-radius: 5px;
-      padding: 1rem;
-      opacity: 0; }
-      .review-customer__item--rel p > i {
+      padding: 1rem; }
+      .review-customer__item p > i {
         margin-right: 5px;
         vertical-align: super; }
-    .review-customer__item--rel:hover > p {
-      opacity: 1; }
-    .review-customer__item--rel:hover > img {
-      opacity: 0;
-      transform: translateY(-1rem); }
+    .review-customer__item:hover {
+      background: #8565b6;
+      color: #e6f4f1;
+      transform: translateY(-1.5rem); }
+      .review-customer__item:hover img {
+        filter: grayscale(0) brightness(100%); }
 
 .footer {
   background-color: rgba(0, 164, 214, 0.9);
