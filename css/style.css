@@ -119,13 +119,14 @@ body {
       transition: all 0.3s; }
       .header__navigation .call i {
         display: inline-block;
-        vertical-align: middle;
-        font-size: inherit; }
+        vertical-align: baseline;
+        font-size: inherit;
+        margin-right: 2px; }
       .header__navigation .call:hover {
         transform: scale(1.1); }
 
 .home {
-  background-image: linear-gradient(to right top, rgba(0, 164, 214, 0.4), rgba(133, 101, 182, 0.2)), url("../../asset/image/hero.jpeg");
+  background-image: linear-gradient(to right top, rgba(0, 164, 214, 0.4), rgba(133, 101, 182, 0.2)), url("../asset/image/hero.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

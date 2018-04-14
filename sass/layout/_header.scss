@@ -65,8 +65,9 @@
 
       & i {
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: baseline;
         font-size: inherit;
+        margin-right: 2px;
       }
 
       &:hover {
