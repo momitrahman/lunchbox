@@ -22,19 +22,22 @@
     & input,
     & textarea,
     & button {
+      font-size: 1.6rem;
+      font-family: inherit;
       border: none;
       padding: 1rem;
-      margin-bottom: 1rem;
+      margin: 1rem 0;
       border-radius: 5px;
-      border-bottom: 3px solid $color-s;
+      border-bottom: 4px solid $color-s;
       width: 50vh;
+      transition: all 0.3s;
 
       &:focus {
         outline: none;
         border: none;
-        outline: 2px solid $color-s;
+        border-bottom: 4px solid $color-s;
         &:invalid {
-          outline: 2px solid $color-r;
+          border-bottom: 4px solid $color-r;
         }
       }
     }
@@ -51,7 +54,7 @@
   &__address {
     text-align: left;
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 1rem;
     & i {
       margin-right: 5px;
@@ -61,8 +64,7 @@
     }
 
     &--title {
-      font-size: 2rem;
-      font-weight: 700;
+      @extend %normal-title;
     }
   }
 }

@@ -2,6 +2,7 @@
   @extend %flex;
   background-color: rgba($bg-color-p, 0.9);
   margin-top: 5rem;
+  color: $font-color-p;
 }
 
 .links {
@@ -9,32 +10,34 @@
   margin: 2rem;
 
   & div {
-    font-size: 1.6rem;
-    text-transform: uppercase;
+    @extend %normal-title;
   }
 
   & a {
+    margin: 0.5rem;
     display: block;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-transform: capitalize;
-    font-weight: 300;
   }
 
   & a:link,
   & a:visited {
-    color: inherit;
+    // color: $color-s;
+    color: $font-color-p;
   }
 
   & a:hover,
   & a:active {
+    color: $color-s;
   }
 }
 
 .company {
   & div {
     @extend %d-font;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
   }
 
   & p {
@@ -44,24 +47,28 @@
 
 .follow {
   & div {
-    font-size: 1.6rem;
-    text-transform: uppercase;
+    @extend %normal-title;
   }
 
   & a {
+    display: inline-block;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: capitalize;
     font-weight: 300;
     margin: 1rem;
+    transition: all 0.3s;
+    backface-visibility: hidden;
   }
 
   & a:link,
   & a:visited {
-    color: $color-s;
+    color: $font-color-p;
   }
 
   & a:hover,
   & a:active {
+    color: $color-s;
+    transform: translateY(-0.5rem) rotate(5deg) scale(1.1);
   }
 }

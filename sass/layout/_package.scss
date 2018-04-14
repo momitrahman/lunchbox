@@ -7,7 +7,7 @@
   margin: 3rem 0;
   text-align: center;
   box-shadow: 0 2px 3px $font-color-p;
-  transition: all 0.5s;
+  transition: all 0.3s;
 
   &__title {
     font-size: 3.5rem;
@@ -44,6 +44,7 @@
   }
 
   &:hover {
-    transform: translateY(-1.5rem);
+    transform: translateY(-2rem);
+    backface-visibility: hidden;
   }
 }

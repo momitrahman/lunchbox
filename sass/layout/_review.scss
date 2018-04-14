@@ -46,8 +46,7 @@
     justify-content: space-around;
     align-items: center;
     width: 25%;
-    transition: all 0.5s;
-
+    transition: all 0.3s;
     & img {
       display: block;
       width: 50%;
@@ -70,7 +69,7 @@
     &:hover {
       background: rgba($color-s, 1);
       color: $font-color-s;
-      transform: translateY(-1.5rem);
+      transform: translateY(-2rem) rotate(-5deg);
 
       & img {
         filter: grayscale(0) brightness(100%);

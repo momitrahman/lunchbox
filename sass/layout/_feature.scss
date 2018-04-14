@@ -17,17 +17,17 @@
   &-item {
     margin: 2rem;
     padding: 2rem;
-    transition: all 0.5s;
+    transition: all 0.3s;
 
     & div {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-transform: capitalize;
       margin-bottom: 1rem;
     }
 
     & p {
-      font-size: 1.7rem;
-      font-weight: 300;
+      font-size: 1.6rem;
+      // font-weight: 300;
     }
 
     & i {
@@ -38,9 +38,9 @@
     &:hover {
       box-shadow: 0 1px 2px $color-p;
       border-radius: 5px;
-      transform: translateY(-1.5rem);
       background: $color-s;
       color: white;
+      transform: translateY(-1.5rem);
       backface-visibility: hidden;
 
       & i {

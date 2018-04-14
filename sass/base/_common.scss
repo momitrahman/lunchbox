@@ -7,3 +7,11 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
+%normal-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid $color-s;
+  letter-spacing: 2px;
+}
