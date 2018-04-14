@@ -1,0 +1,76 @@
+.footer {
+  @extend %flex;
+  background-image: linear-gradient(
+    to right top,
+    #00bdd7,
+    #00c3d5,
+    #00c9d1,
+    #00cecc,
+    #00d3c6
+  );
+
+  margin-top: 5rem;
+}
+
+.links {
+  text-align: left;
+  margin: 2rem;
+
+  & div {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+  }
+
+  & a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+
+  & a:link,
+  & a:visited {
+    color: inherit;
+  }
+
+  & a:hover,
+  & a:active {
+  }
+}
+
+.company {
+  & div {
+    @extend %d-font;
+    font-size: 2rem;
+  }
+
+  & p {
+    font-size: 1.6rem;
+  }
+}
+
+.follow {
+  & div {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  & a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 1rem;
+  }
+
+  & a:link,
+  & a:visited {
+    color: inherit;
+  }
+
+  & a:hover,
+  & a:active {
+  }
+}

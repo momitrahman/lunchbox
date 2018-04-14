@@ -19,10 +19,10 @@ body {
   text-align: center;
   background: #f5f5f5; }
 
-.header__title, .info__title {
+.header__title, .info__title, .company div {
   font-family: 'Abril Fatface', cursive; }
 
-.header, .works__steps, .feature-info, .package-items, .contact-info, .review-lover, .review-customer {
+.header, .works__steps, .feature-info, .package-items, .contact-info, .review-lover, .review-customer, .footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
@@ -52,7 +52,7 @@ body {
     left: 52%;
     transform: translateX(-50%);
     width: 5rem;
-    border-bottom: 2px solid #00a4d6; }
+    border-bottom: 2px solid #114b5f; }
   .title span:before {
     content: '';
     display: block;
@@ -61,10 +61,10 @@ body {
     left: 50%;
     transform: translateX(-60%);
     width: 5rem;
-    border-bottom: 2px solid #00a4d6; }
+    border-bottom: 2px solid #114b5f; }
 
 .home {
-  background-image: linear-gradient(to top, rgba(0, 164, 214, 0.5), rgba(0, 130, 200, 0.5)), url("../../asset/image/hero.jpeg");
+  background-image: linear-gradient(to top, rgba(17, 75, 95, 0.5), rgba(0, 23, 31, 0.5)), url("../../asset/image/hero.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,7 +127,7 @@ body {
       .works__steps .works-step--logo i {
         display: block;
         font-size: 6rem;
-        color: #00a4d6; }
+        color: #114b5f; }
       .works__steps .works-step--logo span {
         display: block;
         position: absolute;
@@ -145,7 +145,7 @@ body {
         vertical-align: middle; }
 
 .feature-box {
-  background: linear-gradient(to top, rgba(0, 164, 214, 0.2), rgba(0, 130, 200, 0.2));
+  background: linear-gradient(to top, rgba(17, 75, 95, 0.2), rgba(0, 23, 31, 0.2));
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0; }
@@ -166,7 +166,6 @@ body {
   .feature-info-item p {
     font-size: 1.6rem; }
   .feature-info-item i {
-    color: #0082c8;
     font-size: 4rem; }
   .feature-info-item:hover {
     border-radius: 5px;
@@ -183,7 +182,7 @@ body {
     font-size: 3rem;
     font-weight: 300;
     color: #ffffff;
-    background-color: #00bdd7;
+    background-color: #247ba0;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .package-item__title > span {
       font-size: 2rem; }
@@ -200,11 +199,11 @@ body {
     font-weight: 300;
     color: #ffffff;
     width: 100%;
-    background-color: #00bdd7;
+    background-color: #247ba0;
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); }
 
 .contact-box {
-  background: linear-gradient(to top, rgba(0, 164, 214, 0.2), rgba(0, 130, 200, 0.2));
+  background-image: linear-gradient(to right top, #00a4d6, #00b7d9, #00c8d1, #00d8bf, #58e5a8);
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0; }
@@ -224,27 +223,27 @@ body {
       padding: 1rem;
       margin-bottom: 1rem;
       border-radius: 5px;
-      border-bottom: 2px solid #0082c8;
+      border-bottom: 2px solid #00171f;
       width: 50vh; }
       .contact-info__form input:focus,
       .contact-info__form textarea:focus,
       .contact-info__form button:focus {
         outline: none;
         border: none;
-        outline: 2px solid #0082c8; }
+        outline: 2px solid #00171f; }
         .contact-info__form input:focus:invalid,
         .contact-info__form textarea:focus:invalid,
         .contact-info__form button:focus:invalid {
           outline: 2px solid orangered; }
     .contact-info__form button {
       border: none;
-      background: #00a4d6; }
+      background: #114b5f; }
   .contact-info__address {
     text-align: left;
     font-size: 2rem; }
     .contact-info__address i {
       margin-right: 5px;
-      color: #00a4d6; }
+      color: #114b5f; }
     .contact-info__address--title {
       font-size: 2rem;
       font-weight: 700; }
@@ -259,14 +258,14 @@ body {
 .review-lover {
   flex-direction: column;
   text-transform: lowercase;
-  margin: 2rem 0; }
+  margin-top: 5rem; }
   .review-lover__item {
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 2rem;
-    padding: 1rem; }
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-right: 2rem; }
     .review-lover__item > span {
       display: block;
+      font-weight: 300;
       font-size: 1.6rem; }
 
 .review-customer {
@@ -287,7 +286,7 @@ body {
       display: block;
       position: absolute;
       top: 10%;
-      width: 60%;
+      width: 59%;
       font-size: 2rem;
       font-weight: 300;
       margin-top: 3rem;
@@ -298,4 +297,47 @@ body {
       opacity: 0; }
     .review-customer__item--rel:hover > img {
       opacity: 0.8;
-      filter: grayscale(10%) brightness(100%); }
+      filter: grayscale(10%) brightness(100%);
+      transform: scale(0.9); }
+
+.footer {
+  background-image: linear-gradient(to right top, #00bdd7, #00c3d5, #00c9d1, #00cecc, #00d3c6);
+  margin-top: 5rem; }
+
+.links {
+  text-align: left;
+  margin: 2rem; }
+  .links div {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid black; }
+  .links a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 300; }
+  .links a:link,
+  .links a:visited {
+    color: inherit; }
+
+.company div {
+  font-size: 2rem; }
+
+.company p {
+  font-size: 1.6rem; }
+
+.follow div {
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+
+.follow a {
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin: 1rem; }
+
+.follow a:link,
+.follow a:visited {
+  color: inherit; }

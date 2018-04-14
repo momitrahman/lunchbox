@@ -1,14 +1,15 @@
-@import './base/_variables.scss';
-@import './base/_base.scss';
-@import './base/_typography.scss';
-@import './base/_common.scss';
+@import './base/variables';
+@import './base/base';
+@import './base/typography';
+@import './base/common';
 
-@import './components/_button.scss';
-@import './components/_title.scss';
+@import './components/button';
+@import './components/title';
 
-@import './layout/_home.scss';
-@import './layout/_works.scss';
-@import './layout/_feature.scss';
-@import './layout/_package.scss';
-@import './layout/_contact.scss';
-@import './layout/_review.scss';
+@import './layout/home';
+@import './layout/works';
+@import './layout/feature';
+@import './layout/package';
+@import './layout/contact';
+@import './layout/review';
+@import './layout/footer';

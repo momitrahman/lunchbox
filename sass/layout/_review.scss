@@ -10,19 +10,17 @@
 .review-lover {
   @extend %flex;
   flex-direction: column;
-  // justify-content: center;
   text-transform: lowercase;
-  margin: 2rem 0;
-  // background-color: orangered;
+  margin-top: 5rem;
 
   &__item {
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 2rem;
-    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-right: 2rem;
 
     & > span {
       display: block;
+      font-weight: 300;
       font-size: 1.6rem;
     }
   }
@@ -34,7 +32,6 @@
   &__item {
     &--rel {
       position: relative;
-      // margin: 0 5rem;
 
       & i {
         margin-right: 5px;
@@ -53,7 +50,7 @@
         display: block;
         position: absolute;
         top: 10%;
-        width: 60%;
+        width: 59%;
         font-size: 2rem;
         font-weight: 300;
         margin-top: 3rem;
@@ -69,6 +66,7 @@
         & > img {
           opacity: 0.8;
           filter: grayscale(10%) brightness(100%);
+          transform: scale(0.9);
         }
       }
     }
