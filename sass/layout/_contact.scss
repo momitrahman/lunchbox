@@ -17,6 +17,7 @@
   &__form {
     display: flex;
     margin: 1rem;
+    padding: 1rem;
 
     & input,
     & textarea,
@@ -51,9 +52,12 @@
     text-align: left;
     font-size: 2rem;
     margin-top: 2rem;
+    padding: 1rem;
     & i {
       margin-right: 5px;
+      vertical-align: middle;
       color: $color-s;
+      font-size: calc(100% + 1rem);
     }
 
     &--title {

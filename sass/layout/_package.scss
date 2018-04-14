@@ -1,6 +1,6 @@
 .package-items {
   @extend %flex;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 
 .package-item {
@@ -9,7 +9,7 @@
   box-shadow: 0 2px 3px $font-color-p;
 
   &__title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 300;
     color: $font-color-s;
     background-color: rgba($bg-color-p, 0.9);
@@ -22,7 +22,7 @@
 
   &__info {
     list-style: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: left;
     padding: 2rem;
 
@@ -34,11 +34,15 @@
   }
 
   &__order {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
     color: $font-color-s;
     width: 100%;
     background-color: rgba($bg-color-p, 0.9);
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem);
   }
 }

@@ -34,40 +34,42 @@
     &--rel {
       position: relative;
 
-      & i {
-        margin-right: 5px;
-        vertical-align: super;
-      }
       & img {
-        position: relative;
         display: block;
-        width: 60%;
+        top: 100%;
+        width: 70%;
         border-radius: 5%;
-        opacity: 0.4;
-        filter: grayscale(50%) brightness(50%);
+        opacity: 1;
+        filter: grayscale(50%) brightness(60%);
       }
 
       & p {
         display: block;
         position: absolute;
-        top: 10%;
-        width: 59%;
+        top: 0;
+        width: 70%;
         font-size: 2rem;
         font-weight: 300;
-        margin-top: 3rem;
-        padding: 1rem;
-        opacity: 1;
         color: $color-s;
+        // background: rgba($color-p, 0.9);
+        // box-shadow: 0 1px 2px $color-s;
+        border-radius: 5px;
+        padding: 1rem;
+        opacity: 0;
+
+        & > i {
+          margin-right: 5px;
+          vertical-align: super;
+        }
       }
 
       &:hover {
         & > p {
-          opacity: 0;
+          opacity: 1;
         }
         & > img {
-          opacity: 0.8;
-          filter: grayscale(10%) brightness(100%);
-          transform: scale(0.9);
+          opacity: 0;
+          transform: translateY(-1rem);
         }
       }
     }

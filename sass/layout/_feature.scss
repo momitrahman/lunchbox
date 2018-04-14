@@ -12,11 +12,11 @@
 
 .feature-info {
   @extend %flex;
+  margin-bottom: 5rem;
 
   &-item {
-    margin: 2rem 0;
     padding: 2rem;
-    transition: all 0.3s;
+    transition: all 0.5s;
 
     & div {
       font-size: 2rem;
@@ -36,7 +36,14 @@
 
     &:hover {
       border-radius: 5px;
-      transform: scale(0.9);
+      transform: translateY(-1rem);
+      background: $color-s;
+      color: white;
+      backface-visibility: hidden;
+
+      & i {
+        color: inherit;
+      }
     }
   }
 }

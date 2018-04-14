@@ -1,14 +1,6 @@
 .footer {
   @extend %flex;
-  background-image: linear-gradient(
-    to right top,
-    #00bdd7,
-    #00c3d5,
-    #00c9d1,
-    #00cecc,
-    #00d3c6
-  );
-
+  background-color: rgba($bg-color-p, 0.9);
   margin-top: 5rem;
 }
 
@@ -19,7 +11,6 @@
   & div {
     font-size: 1.6rem;
     text-transform: uppercase;
-    border-bottom: 1px solid black;
   }
 
   & a {
@@ -67,7 +58,7 @@
 
   & a:link,
   & a:visited {
-    color: inherit;
+    color: $color-s;
   }
 
   & a:hover,
