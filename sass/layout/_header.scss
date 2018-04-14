@@ -1,0 +1,74 @@
+.header {
+  @extend %flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba($bg-color-p, 0.9);
+  color: $font-color-s;
+
+  &__title {
+    @extend %d-font;
+    font-size: 2.5rem;
+
+    & a:link,
+    & a:visited {
+      text-decoration: none;
+      color: $font-color-s;
+    }
+
+    & > span {
+      margin-left: 5px;
+      font-weight: 300;
+    }
+    & > i {
+      font-size: calc(100% 0.3rem);
+      vertical-align: baseline;
+      display: inline-block;
+    }
+  }
+
+  &__navigation {
+    font-size: 1.8rem;
+    & li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    & a:link,
+    & a:visited {
+      text-decoration: none;
+      color: $font-color-s;
+      display: inline-block;
+      margin-left: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.5s;
+    }
+    & li:hover,
+    & li:active {
+      & a {
+        color: $color-s;
+        transform: translateY(-0.5rem) scale(0.9);
+        border-bottom: 3px solid $color-s;
+      }
+    }
+
+    .call {
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      background-color: $color-s;
+      color: $font-color-p;
+      height: 100%;
+      border-radius: 3px;
+      padding: 5px;
+      letter-spacing: 2px;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
