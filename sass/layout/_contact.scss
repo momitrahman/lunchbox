@@ -11,17 +11,18 @@
 
 .contact-info {
   @extend %flex;
-  align-items: flex-start;
+  justify-content: center;
   margin: 2rem;
 
   &__form {
-    display: flex;
     margin: 1rem;
     padding: 1rem;
+    width: 50%;
 
     & input,
     & textarea,
     & button {
+      display: block;
       font-size: 1.6rem;
       font-family: inherit;
       border: none;
@@ -29,8 +30,8 @@
       margin: 1rem 0;
       border-radius: 5px;
       border-bottom: 4px solid $color-s;
-      width: 50vh;
       transition: all 0.3s;
+      min-width: 50%;
 
       &:focus {
         outline: none;
@@ -54,7 +55,6 @@
   &__address {
     text-align: left;
     font-size: 2rem;
-    margin-top: 3rem;
     padding: 1rem;
     letter-spacing: 1px;
     & i {

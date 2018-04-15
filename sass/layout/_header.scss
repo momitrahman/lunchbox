@@ -7,6 +7,7 @@
   width: 100%;
   background-color: rgba($bg-color-p, 0.8);
   color: $font-color-s;
+  padding: 0.5rem;
 
   &__title {
     @extend %d-font;
@@ -55,13 +56,14 @@
     }
 
     .call {
-      font-size: 1.8rem;
+      font-size: 2rem;
       background-color: $color-s;
       margin-left: 2rem;
-      padding: 3px;
-      border-radius: 3px;
+      padding: 5px;
+      border-radius: 5px;
       letter-spacing: 2px;
       transition: all 0.3s;
+      animation: callMove 6s infinite;
 
       & i {
         display: inline-block;
@@ -71,7 +73,7 @@
       }
 
       &:hover {
-        transform: scale(1.1);
+        animation: none;
       }
     }
   }

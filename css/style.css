@@ -15,7 +15,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   line-height: 1.8;
-  color: #2f3640;
+  color: #24292e;
   text-align: center;
   background: #f5f5f5; }
 
@@ -33,6 +33,30 @@ body {
   text-align: center;
   border-bottom: 2px solid #8565b6;
   letter-spacing: 2px; }
+
+@keyframes callMove {
+  0% {
+    transform: translateX(1rem); }
+  50% {
+    transform: translateX(-1rem); }
+  75% {
+    transform: translateX(1rem); }
+  75% {
+    transform: translateX(-1rem); }
+  100% {
+    transform: translateX(1rem); } }
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%); }
+  50% {
+    transform: translateX(30%); } }
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%); }
+  50% {
+    transform: translateX(-30%); } }
 
 .btn {
   display: inline-block;
@@ -80,7 +104,8 @@ body {
   z-index: 1;
   width: 100%;
   background-color: rgba(0, 164, 214, 0.8);
-  color: #f5f6fa; }
+  color: #f5f6fa;
+  padding: 0.5rem; }
   .header__title {
     font-size: 2.5rem; }
     .header__title a:link,
@@ -113,20 +138,21 @@ body {
       transform: translateY(-0.5rem);
       border-bottom: 3px solid #8565b6; }
     .header__navigation .call {
-      font-size: 1.8rem;
+      font-size: 2rem;
       background-color: #8565b6;
       margin-left: 2rem;
-      padding: 3px;
-      border-radius: 3px;
+      padding: 5px;
+      border-radius: 5px;
       letter-spacing: 2px;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      animation: callMove 6s infinite; }
       .header__navigation .call i {
         display: inline-block;
         vertical-align: baseline;
         font-size: inherit;
         margin-right: 2px; }
       .header__navigation .call:hover {
-        transform: scale(1.1); }
+        animation: none; }
 
 .home {
   background-image: linear-gradient(to right top, rgba(133, 101, 182, 0.4), rgba(0, 164, 214, 0.4)), url("../asset/image/hero.jpeg");
@@ -149,13 +175,15 @@ body {
     font-size: 4rem;
     font-weight: 300;
     letter-spacing: 0.3rem;
-    padding: 1rem; }
+    padding: 1rem;
+    animation: fromLeft 2s ease-in-out; }
   .info__subtitle {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding: 1rem;
-    color: #2f3640; }
+    color: #24292e;
+    animation: fromRight 2s ease-in-out; }
 
 .works {
   text-align: center;
@@ -197,7 +225,7 @@ body {
   transform: rotate(5deg) skew(5deg); }
 
 .feature-info {
-  margin-bottom: 5rem; }
+  margin: 3rem 0; }
   .feature-info-item {
     margin: 2rem;
     padding: 2rem;
@@ -263,15 +291,16 @@ body {
   transform: rotate(5deg) skew(5deg); }
 
 .contact-info {
-  align-items: flex-start;
+  justify-content: center;
   margin: 2rem; }
   .contact-info__form {
-    display: flex;
     margin: 1rem;
-    padding: 1rem; }
+    padding: 1rem;
+    width: 50%; }
     .contact-info__form input,
     .contact-info__form textarea,
     .contact-info__form button {
+      display: block;
       font-size: 1.6rem;
       font-family: inherit;
       border: none;
@@ -279,8 +308,8 @@ body {
       margin: 1rem 0;
       border-radius: 5px;
       border-bottom: 4px solid #8565b6;
-      width: 50vh;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      min-width: 50%; }
       .contact-info__form input:focus,
       .contact-info__form textarea:focus,
       .contact-info__form button:focus {
@@ -300,7 +329,6 @@ body {
   .contact-info__address {
     text-align: left;
     font-size: 2rem;
-    margin-top: 3rem;
     padding: 1rem;
     letter-spacing: 1px; }
     .contact-info__address i {
@@ -373,7 +401,7 @@ body {
 .footer {
   background-color: rgba(0, 164, 214, 0.6);
   margin-top: 5rem;
-  color: #2f3640; }
+  color: #24292e; }
 
 .links {
   text-align: left;
@@ -386,7 +414,7 @@ body {
     text-transform: capitalize; }
   .links a:link,
   .links a:visited {
-    color: #2f3640; }
+    color: #24292e; }
   .links a:hover,
   .links a:active {
     color: #8565b6; }
@@ -410,7 +438,7 @@ body {
 
 .follow a:link,
 .follow a:visited {
-  color: #2f3640; }
+  color: #24292e; }
 
 .follow a:hover,
 .follow a:active {
