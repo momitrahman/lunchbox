@@ -5,6 +5,10 @@
   &__steps {
     @extend %flex;
 
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+
     .works-step {
       text-align: center;
       &--logo {

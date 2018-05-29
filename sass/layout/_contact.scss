@@ -3,6 +3,10 @@
   transform: rotate(-5deg) skew(-5deg);
   padding: 5rem;
   margin: 5rem 0;
+  @media (max-width: 900px) {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
 }
 
 .contact {
@@ -11,13 +15,15 @@
 
 .contact-info {
   @extend %flex;
-  justify-content: center;
   margin: 2rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 
   &__form {
     margin: 1rem;
     padding: 1rem;
-    width: 50%;
 
     & input,
     & textarea,
@@ -32,6 +38,9 @@
       border-bottom: 4px solid $color-s;
       transition: all 0.3s;
       width: 500px;
+      @media (max-width: 450px) {
+        width: 300px;
+      }
 
       &:focus {
         outline: none;
@@ -60,6 +69,8 @@
     font-size: 2rem;
     padding: 1rem;
     letter-spacing: 1px;
+    margin-left: 10px;
+
     & i {
       margin-right: 5px;
       vertical-align: middle;

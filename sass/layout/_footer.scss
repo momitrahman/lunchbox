@@ -3,10 +3,14 @@
   background-color: rgba($bg-color-p, 0.6);
   margin-top: 5rem;
   color: $font-color-p;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .links {
-  text-align: left;
   margin: 2rem;
 
   & div {
@@ -42,10 +46,13 @@
 
   & p {
     font-size: 1.6rem;
+    padding: 5px;
   }
 }
 
 .follow {
+  margin: 2rem;
+
   & div {
     @extend %normal-title;
   }
