@@ -1,6 +1,6 @@
 .footer {
   @extend %flex;
-  background-color: rgba($bg-color-p, 0.6);
+  background-color: rgba($bg-color-s, 0.8);
   margin-top: 5rem;
   color: $font-color-p;
 
@@ -33,7 +33,7 @@
 
   & a:hover,
   & a:active {
-    color: $color-s;
+    color: $color-p;
   }
 }
 
@@ -75,7 +75,7 @@
 
   & a:hover,
   & a:active {
-    color: $color-s;
+    color: $color-p;
     transform: rotate(-10deg) scale(1.1);
   }
 }
