@@ -1,8 +1,8 @@
 .home {
   background-image: linear-gradient(
-      to right top,
-      rgba($color-s, 0.4),
-      rgba($color-p, 0.4)
+      to right,
+      rgba($color-p, 0.7),
+      rgba($color-s, 0.7)
     ),
     url('../asset/image/hero.jpeg');
   background-position: center;
@@ -23,19 +23,19 @@
   border-radius: 3px;
 
   &__title {
-    // @extend %d-font;
     font-size: 4rem;
     font-weight: 300;
-    letter-spacing: 0.3rem;
+    letter-spacing: 2px;
     padding: 1rem;
-    animation: fromLeft 2s ease-in-out;
+    animation: fromLeft 1s ease-in-out;
   }
   &__subtitle {
     font-size: 2rem;
-    letter-spacing: 0.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
     padding: 1rem;
-    color: $font-color-p;
-    animation: fromRight 2s ease-in-out;
+    color: #00305a;
+    animation: fromRight 1s ease-in-out;
   }
 }

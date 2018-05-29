@@ -1,5 +1,6 @@
 .review {
-  margin: 3rem 0;
+  margin: 5rem 0;
+  padding: 5rem 0;
 }
 
 .review-info {
@@ -51,7 +52,7 @@
       width: 50%;
       border-radius: 50%;
       margin-top: -8rem;
-      filter: grayscale(50%) brightness(60%);
+      filter: grayscale(30%) brightness(60%);
     }
 
     & p {

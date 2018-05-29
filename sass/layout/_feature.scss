@@ -1,8 +1,8 @@
 .feature-box {
-  background-color: rgba($bg-color-p, 0.6);
+  background-color: rgba($bg-color-p, 0.5);
   transform: rotate(-5deg) skew(-5deg);
-  padding: 5rem;
-  margin: 5rem 0;
+  padding: 8rem 0;
+  margin: 10rem 0;
 }
 
 .feature {
@@ -12,12 +12,11 @@
 
 .feature-info {
   @extend %flex;
-  margin: 3rem 0;
+  margin: 4rem;
 
   &-item {
     margin: 2rem;
     padding: 2rem;
-    transition: all 0.3s;
 
     & div {
       font-size: 2.5rem;
@@ -26,19 +25,12 @@
     }
 
     & p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
 
     & i {
-      font-size: 3.5rem;
+      font-size: 5rem;
       color: $color-s;
-    }
-
-    &:hover {
-      box-shadow: 0 2px 2px $color-s;
-      border-radius: 5px;
-      transform: translateY(-1.5rem);
-      backface-visibility: hidden;
     }
   }
 }

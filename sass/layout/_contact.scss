@@ -31,7 +31,7 @@
       border-radius: 5px;
       border-bottom: 4px solid $color-s;
       transition: all 0.3s;
-      min-width: 50%;
+      width: 500px;
 
       &:focus {
         outline: none;
@@ -49,6 +49,9 @@
       text-transform: uppercase;
       font-size: 2rem;
       color: $font-color-s;
+      border: 4px solid transparent;
+      padding: 5px;
+      cursor: pointer;
     }
   }
 

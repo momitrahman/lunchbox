@@ -1,19 +1,24 @@
+.package {
+  padding: 5rem 0;
+}
+
 .package-items {
   @extend %flex;
-  margin: 2rem 0;
+  margin: 5rem 0;
 }
 
 .package-item {
   margin: 3rem 0;
   text-align: center;
-  box-shadow: 0 2px 3px $color-p;
+  box-shadow: 0 2px 3px $color-s;
   transition: all 0.3s;
 
   &__title {
     font-size: 3.5rem;
     font-weight: 300;
+    padding-bottom: 10px;
     color: $font-color-s;
-    background-color: rgba($bg-color-s, 0.9);
+    background-color: $bg-color-s;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
     & > span {
@@ -37,9 +42,10 @@
   &__order {
     font-size: 2rem;
     font-weight: 300;
+    padding-top: 20px;
     color: $font-color-s;
     width: 100%;
-    background-color: rgba($bg-color-s, 0.9);
+    background-color: $bg-color-s;
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   }
 
