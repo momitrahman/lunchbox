@@ -17,17 +17,17 @@
       left: 52%;
       transform: translateX(-50%);
       width: 5rem;
-      border-bottom: 2px solid $color-s;
+      border-bottom: 3px solid $color-g;
     }
     &:before {
       content: '';
       display: block;
       position: absolute;
-      top: 90%;
+      top: 85%;
       left: 50%;
       transform: translateX(-60%);
       width: 5rem;
-      border-bottom: 2px solid $color-s;
+      border-bottom: 3px solid $color-g;
     }
   }
 }

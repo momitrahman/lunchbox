@@ -79,7 +79,7 @@
 
     .call {
       font-size: 2rem;
-      background-color: $color-s;
+      background-color: $color-g;
       margin-left: 2rem;
       padding: 5px;
       border-radius: 5px;
@@ -97,7 +97,7 @@
       &:hover {
         animation: none;
         background-color: #f5f5f5;
-        color: $color-s;
+        color: $color-g;
       }
     }
   }

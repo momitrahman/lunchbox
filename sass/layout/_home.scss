@@ -1,8 +1,8 @@
 .home {
   background-image: linear-gradient(
       to right,
-      rgba($color-p, 0.7),
-      rgba($color-s, 0.7)
+      rgba($color-p, 0.5),
+      rgba($color-s, 0.5)
     ),
     url('../asset/image/hero.jpeg');
   background-position: center;
@@ -50,7 +50,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 1rem;
-    color: #00305a;
+    color: $color-g;
     animation: fromRight 1s ease-in-out;
     @media (max-width: 600px) {
       font-size: 1.8rem;
