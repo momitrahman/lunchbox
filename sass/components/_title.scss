@@ -7,13 +7,18 @@
   margin: 1rem;
   letter-spacing: 1px;
   word-spacing: 3px;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 2.5rem;
+  }
 
   & span {
     &:after {
       content: '';
       display: block;
       position: absolute;
-      top: 100%;
+      top: 105%;
       left: 52%;
       transform: translateX(-50%);
       width: 5rem;
@@ -23,7 +28,7 @@
       content: '';
       display: block;
       position: absolute;
-      top: 85%;
+      top: 90%;
       left: 50%;
       transform: translateX(-60%);
       width: 5rem;

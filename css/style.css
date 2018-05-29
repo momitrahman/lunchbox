@@ -22,7 +22,7 @@ body {
   line-height: 1.8;
   color: #24292e;
   text-align: center;
-  background: #ffffff;
+  background: #f7f7f7;
 }
 
 .header__title,
@@ -168,12 +168,18 @@ body {
   margin: 1rem;
   letter-spacing: 1px;
   word-spacing: 3px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
 }
 .title span:after {
   content: '';
   display: block;
   position: absolute;
-  top: 100%;
+  top: 105%;
   left: 52%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -184,7 +190,7 @@ body {
   content: '';
   display: block;
   position: absolute;
-  top: 85%;
+  top: 90%;
   left: 50%;
   -webkit-transform: translateX(-60%);
   transform: translateX(-60%);
@@ -383,13 +389,15 @@ body {
 
 .works {
   text-align: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 @media (max-width: 600px) {
   .works__steps {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
   }
 }
 .works__steps .works-step {
@@ -474,6 +482,11 @@ body {
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
+@media (max-width: 600px) {
+  .feature-info-item div {
+    font-size: 2.2rem;
+  }
+}
 .feature-info-item p {
   font-size: 1.8rem;
 }
@@ -492,7 +505,7 @@ body {
 }
 
 .package-items {
-  margin: 3rem 0;
+  margin: 4rem 0;
 }
 @media (max-width: 900px) {
   .package-items {
@@ -555,8 +568,8 @@ body {
   background-color: rgba(0, 164, 214, 0.4);
   -webkit-transform: rotate(-5deg) skew(-5deg);
   transform: rotate(-5deg) skew(-5deg);
-  padding: 5rem;
-  margin: 3rem 0;
+  padding: 6rem;
+  margin: 4rem 0;
 }
 @media (max-width: 900px) {
   .contact-box {
@@ -763,21 +776,25 @@ body {
 }
 
 .footer {
+  -webkit-clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
   background-color: rgba(99, 125, 204, 0.8);
-  margin-top: 5rem;
+  margin-top: 2rem;
+  padding-top: 10rem;
   color: #24292e;
+  text-align: center;
 }
 @media (max-width: 900px) {
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    text-align: center;
+    padding-top: 12rem;
   }
 }
 
 .links {
-  margin: 2rem;
+  margin-bottom: 2rem;
 }
 .links a {
   margin: 0.5rem;

@@ -7,7 +7,7 @@
 
 .package-items {
   @extend %flex;
-  margin: 3rem 0;
+  margin: 4rem 0;
   @media (max-width: 900px) {
     flex-direction: column;
     margin: 1rem 0;
